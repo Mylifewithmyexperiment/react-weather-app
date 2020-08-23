@@ -8,8 +8,10 @@ export default function NavigationBar(props) {
       </div>
 
       <div className="col-md-6">
-        <form className="region" onSubmit={ (e) =>
-             props.changeWeather(e)  
+        <form className="region" onSubmit={ (e) =>{ e.preventDefault();
+     props.changeWeather(e)     
+    }
+             
         }  >
           <input
             className="box"

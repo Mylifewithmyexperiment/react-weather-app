@@ -66,7 +66,7 @@ class App extends React.Component {
 
   changeWeather = (e) => {
     console.log("calling change weather");
-    //e.preventDefalt()
+   // e.preventDefault();
 
     console.log("here i am in ");
     console.log(this.state.inputData);
